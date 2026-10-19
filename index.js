@@ -26,7 +26,7 @@ function renderUsers(users) {
         <table class="users-table">
             <thead>
                 <tr>
-                    <td><input type="checkbox" class="user-checkbox"></td>
+                    <th><input type="checkbox" class="user-checkbox"></th>
                     <th></th>
                     <th>Username</th>
                     <th>Name</th>
