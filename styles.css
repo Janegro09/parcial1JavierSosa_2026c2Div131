@@ -14,6 +14,7 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: var(--color-gris-claro);
+    padding: 20px;
 }
 
 header{
@@ -73,31 +74,57 @@ header{
     border-radius: 4px;
     width: 400px;
 }
-
+input[type="radio"] {
+    margin-right: 5px;
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+    accent-color: var(--color-primary);
+}   
+input[type="checkbox"] {
+    margin-right: 5px;
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+    accent-color: var(--color-primary);
+}
 /* estilos tabla */
 /* 
 0.5 puntos / Usen el color primario para el color username de la tabla, el color de fondo de los input, el color y el
 borde de los botones de abajo tal como aparece en la imagen. Usen el color gris oscuro para la barra horizontal,
 el borde de la barra de búsqueda y de los campos de la tabla y el color gris claro para las filas impares */
-.user-table th{
+
+.users-table th{
     background-color: var(--color-primary);
     color: white;
     padding: 10px;
     text-align: left;
+    height: 40px;
+}
+.users-table td{
+    border: 1px solid var(--color-gris-oscuro);
+    padding: 10px;
+    height: 40px;
 }
 
-.user-table td.user-cell{
+/* td{
+    cursor: pointer;
+} */
+.users-table td.user-cell{
     background-color: var(--color-gris-claro);
 }
-.user-table tbody tr:nth-child(odd){background-color: var(--color-secundario);}
-.user-table tbody tr:nth-child(even){background-color: #f2f2f2;}
-.user-table {
+.users-table tbody tr:nth-child(odd){background-color: var(--color-secundario);}
+.users-table tbody tr:nth-child(even){background-color: #f2f2f2;}
+.users-table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
 }
 
-
+/* 0.25 puntos / Usen el color secundario para que al pasar el mouse por un usuario (fila) tenga ese color de fondo.  */
+.users-table tbody tr:hover {
+    background-color: var(--color-secundario);
+}
 /* pie de página */
 footer {
     text-align: center;

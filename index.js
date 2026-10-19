@@ -39,7 +39,7 @@ function renderUsers(users) {
 
     users.forEach(user => {
         htmlTabla += `
-            <tr>
+            <tr >
                 <td><input type="checkbox" class="user-checkbox"></td>
                 <td><img src="user-icon.png" alt="User Icon" class="user-icon"></td>
                 <td>${user.username}</td>
