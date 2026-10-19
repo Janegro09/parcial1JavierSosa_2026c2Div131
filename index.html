@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js" defer></script>
+    <script src="index.js" defer></script>
+    <title></title>
+</head>
+<body>
+    <header>
+        Parcial 1 - Division 131
+    </header>
+
+    <main>
+        
+        <div class="title-container">
+            <h1 class="users-title">Users</h1>
+        </div>
+
+        <!-- barra horizontal -->
+        <hr>
+        
+        <div class="top-controls">          
+            <!-- Filtros de busqueda -->
+            <div class="filter-container">
+                <input type="radio" name="status" value="active" id="active">
+                <label for="active">Active</label>
+                <input type="radio" name="status" value="inactive" id="inactive">
+                <label for="inactive">Inactive</label>
+                <input type="radio" name="status" value="all" id="all">
+                <label for="all">All</label>
+            </div>
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Search user">
+            </div>
+        </div>
+
+        <!-- ABM botones -->
+        <div class="button-container">
+            <button class="create-button" name="create-button" id="create-button" checked>
+                CREATE
+            </button>
+            <button class="deactivate-button" name="deactivate-button" id="deactivate-button">
+                DESACTIVATE
+            </button>
+            <button class="reset-password-button" name="reset-password-button" id="reset-password-button">
+                RESET PASSWORD
+            </button>
+        </div>
+
+        <!-- div vacio con info de js -->
+        <div id="users-container">
+
+        </div>
+        <!-- <table class="table">
+            <td class="table-cell">
+                <tr class="table-row">Columna1</tr>
+                <tr class="table-row">Columna2</tr>
+                <tr class="table-row">Columna3</tr>
+                <tr class="table-row">Columna4</tr>
+                <tr class="table-row">Columna5</tr>
+                <tr class="table-row">Columna6</tr>
+            </td>
+        </table> -->
+    </main>
+    <footer>
+        <p>Javier Sosa</p>
+    </footer>
+</body>
+</html>

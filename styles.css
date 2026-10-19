@@ -1,0 +1,105 @@
+:root{
+    --color-primary: #483D8B;
+    --color-gris-oscuro: #dddddd;
+    --color-gris-claro: #fbfbfb;
+    --color-secundario: #f0eefb;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--color-gris-claro);
+}
+
+header{
+    text-align: center;
+}
+
+.user-icon{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/* botones de gestion*/
+.create-button {
+    background-color: var(--color-primary);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.deactivate-button {
+    background-color: var(--color-gris-oscuro);
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.reset-password-button {
+    background-color: var(--color-secundario);
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* filtros de busqueda */
+.top-controls{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    /* margin-bottom: 20px; */
+    margin: 10px 0px;
+}
+
+.search-container{
+    display: flex;
+    align-items: center;
+}
+#search-input{
+    padding: 5px;
+    border: 1px solid var(--color-gris-oscuro);
+    border-radius: 4px;
+    width: 400px;
+}
+
+/* estilos tabla */
+/* 
+0.5 puntos / Usen el color primario para el color username de la tabla, el color de fondo de los input, el color y el
+borde de los botones de abajo tal como aparece en la imagen. Usen el color gris oscuro para la barra horizontal,
+el borde de la barra de búsqueda y de los campos de la tabla y el color gris claro para las filas impares */
+.user-table th{
+    background-color: var(--color-primary);
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+
+.user-table td.user-cell{
+    background-color: var(--color-gris-claro);
+}
+.user-table tbody tr:nth-child(odd){background-color: var(--color-secundario);}
+.user-table tbody tr:nth-child(even){background-color: #f2f2f2;}
+.user-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+
+/* pie de página */
+footer {
+    text-align: center;
+}
+
