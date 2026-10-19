@@ -93,6 +93,15 @@ input[type="checkbox"] {
 0.5 puntos / Usen el color primario para el color username de la tabla, el color de fondo de los input, el color y el
 borde de los botones de abajo tal como aparece en la imagen. Usen el color gris oscuro para la barra horizontal,
 el borde de la barra de búsqueda y de los campos de la tabla y el color gris claro para las filas impares */
+.users-title{
+    cursor: pointer;
+    /* color: var(--color-primary); */
+    margin-bottom: 10px;
+}
+
+.users-table th, .users-table td{
+    border: 1px solid var(--color-gris-oscuro);
+}
 
 .users-table th{
     background-color: var(--color-primary);
@@ -125,8 +134,18 @@ el borde de la barra de búsqueda y de los campos de la tabla y el color gris cl
 .users-table tbody tr:hover {
     background-color: var(--color-secundario);
 }
+
+.no-results {
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+    color: var(--color-primary);
+}
+
 /* pie de página */
 footer {
     text-align: center;
+    padding: 10px;
+    margin-top: 20px;
 }
 

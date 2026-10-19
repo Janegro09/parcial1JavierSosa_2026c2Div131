@@ -79,6 +79,6 @@ searchInput.addEventListener('keyup', () => {
     if (filteredUsers.length > 0) {
         renderUsers(filteredUsers);
     } else {
-        usersContainer.innerHTML = '<p>No se encontraron usuarios</p>';
+        usersContainer.innerHTML = '<p class="no-results">No se encontraron usuarios</p>';
     }
 });
